@@ -6,10 +6,9 @@
 
 <% postsArray.forEach(function(post){ %> 
     <h1> <%= post.title %></h1>
-    <p> <%= post.body.substring(0,100) + "..." %>
-    <% const url="/posts/"+post.title;%>
-    <%console.log(url);%>
-    <a href="/posts/ <%= post.title%>"  >Read More</a></p>
+    <p> <%= post.content.substring(0,100) + "..." %>
+    <a href="/posts/<%= post._id%>"  >Read More</a></p>
+    
 <% }); %>
 
 

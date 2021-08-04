@@ -3,13 +3,17 @@
 <h1>Home</h1>
 <p> <%= contentOfHome %> </p>
 
-
-<% postsArray.forEach(function(post){ %> 
-    <h1> <%= post.title %></h1>
-    <p> <%= post.content.substring(0,100) + "..." %>
-    <a href="/posts/<%= post._id%>"  >Read More</a></p>
-    
-<% }); %>
+<div class="post">
+    <% postsArray.forEach(function(post){ %> 
+        <h1> <%= post.title %> 
+        <a href="/edit/<%= post._id %>"  ><i class="far fa-edit edit"></i></a></h1>
+        <p> <%= post.content.substring(0,100) + "..." %>
+        <a href="/posts/<%= post._id %>"  >Read More</a></p>
+        
+    <% }); %>
+</div>
 
 
 <%- include("partials/footer"); -%>
+
+

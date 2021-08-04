@@ -34,8 +34,7 @@ app.get("/",function(req,res){
      console.log(err);
     else
     res.render("home",{contentOfHome : homeStartingContent , postsArray : foundposts});
-  })
-
+  });
 
 });
 
@@ -62,12 +61,33 @@ app.get("/posts/:id",function(req,res){
     if(foundPost){
       res.render("post",{
         title : foundPost.title ,
-        body : foundPost.content
+        body : foundPost.content,
+        post_id : foundPost._id
       });
     }
     
   });
   
+});
+
+
+
+app.get("/edit/:id",function(req,res){
+  const requestedPostId=req.params.id;
+  Post.findOne( {_id:requestedPostId} , function(err,foundPost){
+    if(err){
+      console.log(err);
+    }
+    if(foundPost){
+      res.render("edit",{
+        title : foundPost.title ,
+        body : foundPost.content,
+        post_id : foundPost._id
+      });
+    }
+    
+  });
+
 });
 
 app.post("/compose",function(req,res){
@@ -76,10 +96,23 @@ app.post("/compose",function(req,res){
     title : req.body.composeTitle,
     content : req.body.composeText
   });
-  // posts.push(post);
   post.save();
   res.redirect("/");
 
+})
+
+app.post("/edit",function(req,res){
+ 
+  updatedTitle= req.body.composeTitle;
+  updatedContent=req.body.composeText;
+  id=req.body.postId;
+
+  Post.findOneAndUpdate({_id : id },{ title : updatedTitle , content :updatedContent },function(err,updatedPost){
+    if(err)
+     console.log(err);
+  }) ;
+ 
+  res.redirect("/");
 
 })
 

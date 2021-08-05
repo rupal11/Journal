@@ -90,6 +90,18 @@ app.get("/edit/:id",function(req,res){
 
 });
 
+
+app.get("/delete/:id",function(req,res){
+  const requestedPostId=req.params.id;
+  Post.findOneAndDelete( {_id:requestedPostId} , function(err){
+    if(err){
+      console.log(err);
+    }
+    
+  });
+res.redirect("/");
+});
+
 app.post("/compose",function(req,res){
  
   const post=new Post({

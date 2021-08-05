@@ -1,6 +1,7 @@
 <%- include("partials/header"); -%>
 
-<h1> <%= title %> <a href="/edit/<%= post_id %>"  ><i class="far fa-edit edit"></i></a></h1>
+<h1> <%= title %> <a href="/edit/<%= post_id %>"  ><i class="far fa-edit edit"></i></a>
+    <a href="/delete/<%= post_id %>"  ><i class="fas fa-trash trash"></i></a></h1>
 <p> <%= body %> </p>
 
 <%- include("partials/footer"); -%>

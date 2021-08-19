@@ -9,7 +9,7 @@ const mongoose=require("mongoose");
 mongoose.connect('mongodb://localhost:27017/journalDB', {useNewUrlParser: true, useUnifiedTopology: true});
 
 
-const homeStartingContent = "Hello!, Welcome to Daily Journal a simple and easy to use website to store your daily journals. Plus you can edit, delete a post and change the color of heading. So what you are waiting for, click on 'Compose' to create a post.";
+const homeStartingContent = "Hello!, Welcome to Daily Journal a simple and easy to use website to store your daily journals. Plus you can edit, delete a post. So what you are waiting for, click on 'Compose' to create a post.";
 const aboutContentMe = "I am Rupal Das, an undergraduate pursuing computer Science and Engineering from Government Engineering College. This website ";
 
 const contactContent = "Scelerisque eleifend donec pretium vulputate sapien. Rhoncus urna neque viverra justo nec ultrices. Arcu dui vivamus arcu felis bibendum. Consectetur adipiscing elit duis tristique. Risus viverra adipiscing at in tellus integer feugiat. Sapien nec sagittis aliquam malesuada bibendum arcu vitae. Consequat interdum varius sit amet mattis. Iaculis nunc sed augue lacus. Interdum posuere lorem ipsum dolor sit amet consectetur adipiscing elit. Pulvinar elementum integer enim neque. Ultrices gravida dictum fusce ut placerat orci nulla. Mauris in aliquam sem fringilla ut morbi tincidunt. Tortor posuere ac ut consequat semper viverra nam libero.";

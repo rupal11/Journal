@@ -1,7 +1,7 @@
 <%- include("partials/header"); -%>
 
 <h1>Home</h1>
-<p> <%= contentOfHome %> </p>
+<h4> <%= contentOfHome %> </h4>
 
 <div class="post">
     <% postsArray.forEach(function(post){ %> 
@@ -9,13 +9,6 @@
         <a href="/edit/<%= post._id %>"  ><i class="far fa-edit edit"></i></a>
         <a href="/delete/<%= post._id %>"  ><i class="fas fa-trash trash"></i></a>
     
-        <span>
-            <button type="button" onclick="changeHeadingColor('red');" class="color-button red-button"></button>
-            <button type="button" onclick="changeHeadingColor('yellow');" class="color-button yellow-button"></button>
-            <button type="button" onclick="changeHeadingColor('green');" class="color-button green-button"></button>
-            <button type="button" onclick="changeHeadingColor('orange');" class="color-button orange-button"></button>
-            <button type="button" onclick="changeHeadingColor('blue');" class="color-button blue-button"></button>
-        </span>
     
     </h1>
         <p> <%= post.content.substring(0,100) + "..." %>

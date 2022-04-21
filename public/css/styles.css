@@ -74,28 +74,8 @@
       
 }
 
-span{
-    position:absolute;
-    right:8%;
+.connect{
+    list-style-type:none;
+    font-size: large;
+    margin-bottom: 70px;;
 }
-.red-button{
-    background-color:red;
-}
-
-.green-button{
-    background-color:green;
-}
-
-.yellow-button{
-    background-color:yellow;
-}
-
-.orange-button{
-    background-color:orange;
-}
-
-.blue-button{
-    background-color:blue;
-}
-
-

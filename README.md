@@ -15,9 +15,9 @@
 
 
 ![Journal](images/journal-post.jpg "Compose")
-<p align="center">Journal Home Page(before)</p>
+<p align="center">Compose Page</p>
 
 ![Journal](images/journal-home.jpg "Home")
-<p align="center">Journal Home Page(before)</p>
+<p align="center">Journal Home Page(after)</p>
 
  ----

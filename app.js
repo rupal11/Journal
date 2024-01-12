@@ -6,9 +6,11 @@ const ejs = require("ejs");
 const _ = require("lodash");
 const mongoose=require("mongoose");
 
+const password = encodeURIComponent(process.env.PASSWORD);
+const databaseUrl="mongodb+srv://admin-rupal:"+ password+ "@cluster0.ydf5s.mongodb.net/journalDB";
 
 
-mongoose.connect(process.env.DATABASE, {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect(databaseUrl, {useNewUrlParser: true, useUnifiedTopology: true});
 
 
 const homeStartingContent = "Hello!, Welcome to Daily Journal a simple and easy to use website to store your daily journals. Plus you can edit as well as delete a post. So start creating now, click on 'Compose' to create a new post.";

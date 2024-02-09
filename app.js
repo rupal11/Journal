@@ -14,7 +14,7 @@ mongoose.connect(databaseUrl, {useNewUrlParser: true, useUnifiedTopology: true})
 
 
 const homeStartingContent = "Hello!, Welcome to Daily Journal a simple and easy to use website to store your daily journals. Plus you can edit as well as delete a post. So start creating now, click on 'Compose' to create a new post.";
-const aboutContent = "Hello👋, I am Rupal Das, an undergraduate pursuing computer Science and Engineering from Government Engineering College. I am passionate about web development🕸️. I am also web development lead of GDSC GEC Bilaspur, had participated in girlscript summer of code(2020) and presently enhancing my DSA and development skills💻. ";
+const aboutContent = "Hello👋, I am Rupal Das. I have done B.Tech in Computer Science and Enginneering from Government Engineering College, Bilaspur(C.G.). I am passionate about web development🕸️.I got the oppourtunity to serve as the Web Development Lead of GDSC GEC Bilaspur(2021-2022) and has also participated in Girlscript Summer of Code(2021). I am presently enhancing my problem solving and working on development skills💻. Apart from coding I also like painting, cooking and reading books(and offcourse sleeping).";
 
 const contactContent = "Let's Connect ";
 

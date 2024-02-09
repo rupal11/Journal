@@ -1,10 +1,15 @@
 # Journal
+ 
+- Developed a full-stack web application to provide users with a platform for recording their daily thoughts and experiences.
+- Users have the ability to create, modify, and remove posts, enabling CRUD (Create, Read, Update, Delete) operations
+within the application.
+- Tech-Stack Used: **NodeJs, ExpressJs, MongoDB, JavaScript, HTML, CSS, and EJS**
+- The application has been deployed utilizing the Render cloud platform.
 
--	Web application designed and developed using backend **NodeJs, ExpressJs and MongoDB.**
--	User can compose, edit and delete a  post.
--	Used **HTML, CSS, JavaScript, EJS** to implement front-end.    
+### [Try it out!](https://journal01.onrender.com/)
 
-### [Go to Website!](https://journal01.herokuapp.com/)
+Reach out to me and provide your valuable feedback: 
+[Linked in](https://www.linkedin.com/in/dasrupal/)
 
   
 
